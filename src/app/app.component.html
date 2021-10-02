@@ -1,0 +1,35 @@
+<mat-toolbar color="primary"> 
+  <mat-toolbar-row>
+    <button mat-icon-button="">
+     <mat-icon [matMenuTriggerFor]="appmenu">menu</mat-icon>
+    </button>
+   <mat-menu #appmenu="matMenu" yPosition="below">
+     <button mat-menu-item="">
+        <span></span>
+     </button>
+      <button mat-menu-item="">
+        <span></span>
+      </button>
+      <button mat-menu-item="">
+        <span></span>
+      </button>
+   </mat-menu>
+   <button mat-stroked-button [matMenuTriggerFor]="menu">Menu1</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Menu Item 1</button>
+  <button mat-menu-item>Menu Item 2</button>
+</mat-menu>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Menu Item 1</button>
+  <button mat-menu-item>Menu Item 2</button>
+</mat-menu>
+   <button mat-stroked-button>Menu2</button>
+   
+   <button mat-stroked-button (click)="goToPage('users')">Users</button>
+   
+   </mat-toolbar-row> 
+</mat-toolbar>
+
+
+
+<router-outlet></router-outlet>

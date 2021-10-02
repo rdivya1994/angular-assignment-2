@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+
+    text-align: center;
+    
+    }
+  .row {
+    display: flex;
+    border-radius: 8px;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    
+  }
